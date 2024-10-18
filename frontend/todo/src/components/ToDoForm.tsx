@@ -8,16 +8,16 @@ export function ToDoForm({todo}: IToDoProp){
     const [isActive, setIsActive] = useState(todo.isActive);
     return(
         <form>
-            <label>Название</label>
+            <label>Название </label>
             <input type="text" value={title} onChange={e => setTitle(e.target.value)} />
             <br/>
-            <label>Описание</label>
+            <label>Описание </label>
             <input type="text" value={description} onChange={e => setDescription(e.target.value)} />
             <br/>
-            <label>Дата окончания</label>
+            <label>Дата окончания </label>
             <input type="datetime" value={Intl.DateTimeFormat("ru", {dateStyle: "short", timeStyle: "short"}).format(new Date(lastDay))} onChange={e => setLastDay(e.target.value)} />
             <br/>
-            <label>Выполено</label>
+            <label>Выполено </label>
             <input type="checkbox" checked={isActive} onChange={e => setIsActive(e.target.checked)} />
         </form>
     )
