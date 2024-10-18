@@ -24,7 +24,7 @@ namespace ToDoAPI
                 {
                     policy.AllowAnyHeader();
                     policy.AllowAnyMethod();
-                    policy.WithOrigins();
+                    policy.WithOrigins("http://localhost:3000");
                 });
             });
 
@@ -42,7 +42,7 @@ namespace ToDoAPI
                 dbContext.Database.EnsureCreated();
             }
 
-            app.UseHttpsRedirection();
+            app.UseCors();
             app.MapControllers();
             app.Run();
         }

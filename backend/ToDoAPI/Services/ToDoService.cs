@@ -58,7 +58,8 @@ namespace ToDoAPI.Services
 
         public async Task<ToDo?> GetToDoAsync(int id, CancellationToken token)
         {
-            return await _context.ToDos.FirstOrDefaultAsync(i => i.Id == id, token);
+            var todo = await _context.ToDos.FirstOrDefaultAsync(i => i.Id == id, token);
+            return todo;
         }
     }
 }

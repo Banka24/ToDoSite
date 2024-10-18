@@ -12,21 +12,21 @@ namespace ToDoAPI.Controllers
         private readonly IToDoService _service = service;
         private readonly ILogger<ToDoController> _logger = logger;
 
-        [HttpGet]
+        [HttpGet()]
         public async Task<IActionResult> GetAllToDo(CancellationToken token)
         {
             var list = await _service.GetAllToDoAsync(token);
             return Ok(list);
         }
 
-        [HttpGet("{id?}")]
+        [HttpGet("{id}")]
         public async Task<IActionResult> GetToDo(int id, CancellationToken token)
         {
             var todo = await _service.GetToDoAsync(id, token);
             return Ok(todo);
         }
 
-        [HttpPost]
+        [HttpPost()]
         public async Task<IActionResult> CreateToDo([FromBody] ToDoPostRequest request, CancellationToken token)
         {
             var toDo = new ToDo
@@ -48,7 +48,7 @@ namespace ToDoAPI.Controllers
             return Created();
         }
 
-        [HttpPatch]
+        [HttpPatch()]
         public async Task<IActionResult> UpdateToDo([FromBody] ToDoPatchRequest request, CancellationToken token)
         {
             var toDo = new ToDo
@@ -70,7 +70,7 @@ namespace ToDoAPI.Controllers
             return NoContent();
         }
 
-        [HttpDelete]
+        [HttpDelete()]
         public async Task<IActionResult> DeleteToDo([FromBody] ToDoDeleteRequest request, CancellationToken token)
         {
             bool status = await _service.DeleteToDoAsync(request.Id, token);
