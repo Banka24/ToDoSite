@@ -2,8 +2,8 @@
 using Microsoft.EntityFrameworkCore;
 using ToDoAPI.Contracts;
 using ToDoAPI.DataAccess;
-using ToDoAPI.Models.Responses;
 using ToDoAPI.Models.Entities;
+using ToDoAPI.Models.Responses;
 
 namespace ToDoAPI.Services
 {
@@ -36,7 +36,7 @@ namespace ToDoAPI.Services
             {
                 todo.LastDay = inputToDo.LastDay;
             }
-            
+
             return await _context.TrySaveChangesAsync(token);
         }
 
@@ -60,7 +60,7 @@ namespace ToDoAPI.Services
         public async Task<ToDoResponse?> GetToDoAsync(int id, CancellationToken token)
         {
             var todo = await _context.ToDos.FirstOrDefaultAsync(i => i.Id == id, token);
-            if(todo is null)
+            if (todo is null)
             {
                 _logger.LogError($"Нет записи с id: {id}");
                 return null;
