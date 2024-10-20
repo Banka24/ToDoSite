@@ -23,7 +23,7 @@ namespace ToDoAPI.Controllers
         public async Task<IActionResult> GetToDo(int id, CancellationToken token)
         {
             var todo = await _service.GetToDoAsync(id, token);
-            return Ok(todo);
+            return todo != null ? Ok(todo) : BadRequest("Такой записи нет");
         }
 
         [HttpPost()]
@@ -35,29 +35,29 @@ namespace ToDoAPI.Controllers
                 Description = request.Description,
                 CreateAt = DateTime.UtcNow,
                 LastDay = request.LastDay,
-                IsActive = true
+                IsComplete = false
             };
 
-            if(!await _service.AddToDoAsync(toDo, token))
+            if (!await _service.AddToDoAsync(toDo, token))
             {
                 _logger.LogError("Попытка добавления не удалась");
-                return BadRequest();
+                return BadRequest("Попытка добавления не удалась");
             }
 
             _logger.LogInformation("Задача была добавлена");
             return Created();
         }
 
-        [HttpPatch()]
-        public async Task<IActionResult> UpdateToDo([FromBody] ToDoPatchRequest request, CancellationToken token)
+        [HttpPatch("{id}")]
+        public async Task<IActionResult> UpdateToDo(int id, [FromBody] ToDoPatchRequest request, CancellationToken token)
         {
             var toDo = new ToDo
             {
-                Id = request.Id,
+                Id = id,
                 Title = request.Title ?? string.Empty,
                 Description = request.Description,
                 LastDay = request.LastDay ?? DateTime.MinValue,
-                IsActive = request.IsActive
+                IsComplete = request.IsComplete
             };
 
             if (!await _service.UpdateToDoAsync(toDo, token))
@@ -67,21 +67,21 @@ namespace ToDoAPI.Controllers
             }
 
             _logger.LogInformation("Произошла замена");
-            return NoContent();
+            return Ok("Изменения сохранены");
         }
 
-        [HttpDelete()]
-        public async Task<IActionResult> DeleteToDo([FromBody] ToDoDeleteRequest request, CancellationToken token)
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteToDo(int id, CancellationToken token)
         {
-            bool status = await _service.DeleteToDoAsync(request.Id, token);
+            bool status = await _service.DeleteToDoAsync(id, token);
 
-            if(status)
+            if (status)
             {
                 _logger.LogInformation("Удаление прошло успешно");
-                return NoContent();
+                return Ok("Задание удалено");
             }
 
-            _logger.LogError($"Задачи под Id {request.Id} не была найдена!");
+            _logger.LogError($"Задачи под Id {id} не была найдена!");
             return BadRequest();
         }
     }

@@ -1,9 +1,9 @@
 import { IToDoProp } from '../props/IToDoProp';
-import "../styles/ToDoCard.css"
+import "../styles/ToDoCard.css";
+import moment from "moment-timezone";
 
 export function ToDoCard({ todo }: IToDoProp) {
-    const lastDayDate = new Date(todo.lastDay);
-    const lastDayString = lastDayDate.toUTCString();
+    const lastDayString = moment(todo.lastDay).tz(moment.tz.guess()).format("YYYY-MM-DD HH:mm");
 
     return (
         <div className="todo-card">
@@ -11,7 +11,7 @@ export function ToDoCard({ todo }: IToDoProp) {
             <p>{todo.description}</p>
             <hr />
             <label>Последний день: {lastDayString}</label>
-            <input type="checkbox" checked={todo.isActive} readOnly />
+            <input type="checkbox" checked={todo.isComplete} readOnly />
         </div>
     );
 }

@@ -11,6 +11,6 @@ namespace ToDoAPI.Models.Entities
         public string? Description { get; set; }
         public DateTime CreateAt { get; set; }
         public DateTime LastDay { get; set; }
-        public bool IsActive { get; set; }
+        public bool IsComplete { get; set; }
     }
 }

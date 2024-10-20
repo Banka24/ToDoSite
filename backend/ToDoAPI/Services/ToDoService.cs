@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using ToDoAPI.Contracts;
 using ToDoAPI.DataAccess;
+using ToDoAPI.Models.Responses;
 using ToDoAPI.Models.Entities;
 
 namespace ToDoAPI.Services
@@ -29,7 +30,7 @@ namespace ToDoAPI.Services
 
             todo.Title = inputToDo.Title;
             todo.Description = inputToDo.Description;
-            todo.IsActive = inputToDo.IsActive;
+            todo.IsComplete = inputToDo.IsComplete;
 
             if (inputToDo.LastDay != DateTime.MinValue)
             {
@@ -51,15 +52,21 @@ namespace ToDoAPI.Services
             return await _context.TrySaveChangesAsync(token);
         }
 
-        public async Task<ICollection<ToDo>> GetAllToDoAsync(CancellationToken token)
+        public async Task<ICollection<ToDoResponse>> GetAllToDoAsync(CancellationToken token)
         {
-            return await _context.ToDos.ToArrayAsync(token);
+            return await _context.ToDos.Select(i => new ToDoResponse(i.Id, i.Title, i.Description, i.LastDay, i.IsComplete)).ToArrayAsync(token);
         }
 
-        public async Task<ToDo?> GetToDoAsync(int id, CancellationToken token)
+        public async Task<ToDoResponse?> GetToDoAsync(int id, CancellationToken token)
         {
             var todo = await _context.ToDos.FirstOrDefaultAsync(i => i.Id == id, token);
-            return todo;
+            if(todo is null)
+            {
+                _logger.LogError($"Нет записи с id: {id}");
+                return null;
+            }
+            var answer = new ToDoResponse(todo.Id, todo.Title, todo.Description, todo.LastDay, todo.IsComplete);
+            return answer;
         }
     }
 }

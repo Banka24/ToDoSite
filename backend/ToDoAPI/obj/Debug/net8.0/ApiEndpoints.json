@@ -27,12 +27,33 @@
   },
   {
     "ContainingType": "ToDoAPI.Controllers.ToDoController",
+    "Method": "GetToDo",
+    "RelativePath": "ToDo/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ToDoAPI.Controllers.ToDoController",
     "Method": "UpdateToDo",
-    "RelativePath": "ToDo",
+    "RelativePath": "ToDo/{id}",
     "HttpMethod": "PATCH",
     "IsController": true,
     "Order": 0,
     "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
       {
         "Name": "request",
         "Type": "ToDoAPI.Models.Requests.ToDoPatchRequest",
@@ -44,24 +65,8 @@
   {
     "ContainingType": "ToDoAPI.Controllers.ToDoController",
     "Method": "DeleteToDo",
-    "RelativePath": "ToDo",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "request",
-        "Type": "ToDoAPI.Models.Requests.ToDoDeleteRequest",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "ToDoAPI.Controllers.ToDoController",
-    "Method": "GetToDo",
     "RelativePath": "ToDo/{id}",
-    "HttpMethod": "GET",
+    "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
     "Parameters": [
