@@ -3,28 +3,24 @@
   "WorkspaceRootPath": "D:\\learn\\PetProject\\ToDoSite\\backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{827387B9-1AD6-4E29-9B0E-C7CBC09C46FB}|ToDoAPI\\ToDoAPI.csproj|d:\\learn\\petproject\\todosite\\backend\\todoapi\\services\\todoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{827387B9-1AD6-4E29-9B0E-C7CBC09C46FB}|ToDoAPI\\ToDoAPI.csproj|solutionrelative:todoapi\\services\\todoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{827387B9-1AD6-4E29-9B0E-C7CBC09C46FB}|ToDoAPI\\ToDoAPI.csproj|d:\\learn\\petproject\\todosite\\backend\\todoapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{827387B9-1AD6-4E29-9B0E-C7CBC09C46FB}|ToDoAPI\\ToDoAPI.csproj|solutionrelative:todoapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{827387B9-1AD6-4E29-9B0E-C7CBC09C46FB}|ToDoAPI\\ToDoAPI.csproj|d:\\learn\\petproject\\todosite\\backend\\todoapi\\models\\responses\\todoresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{827387B9-1AD6-4E29-9B0E-C7CBC09C46FB}|ToDoAPI\\ToDoAPI.csproj|solutionrelative:todoapi\\models\\responses\\todoresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{827387B9-1AD6-4E29-9B0E-C7CBC09C46FB}|ToDoAPI\\ToDoAPI.csproj|d:\\learn\\petproject\\todosite\\backend\\todoapi\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{827387B9-1AD6-4E29-9B0E-C7CBC09C46FB}|ToDoAPI\\ToDoAPI.csproj|solutionrelative:todoapi\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{827387B9-1AD6-4E29-9B0E-C7CBC09C46FB}|ToDoAPI\\ToDoAPI.csproj|d:\\learn\\petproject\\todosite\\backend\\todoapi\\controllers\\todocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{827387B9-1AD6-4E29-9B0E-C7CBC09C46FB}|ToDoAPI\\ToDoAPI.csproj|solutionrelative:todoapi\\controllers\\todocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{827387B9-1AD6-4E29-9B0E-C7CBC09C46FB}|ToDoAPI\\ToDoAPI.csproj|d:\\learn\\petproject\\todosite\\backend\\todoapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{827387B9-1AD6-4E29-9B0E-C7CBC09C46FB}|ToDoAPI\\ToDoAPI.csproj|solutionrelative:todoapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{827387B9-1AD6-4E29-9B0E-C7CBC09C46FB}|ToDoAPI\\ToDoAPI.csproj|d:\\learn\\petproject\\todosite\\backend\\todoapi\\models\\requests\\todopostrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{827387B9-1AD6-4E29-9B0E-C7CBC09C46FB}|ToDoAPI\\ToDoAPI.csproj|solutionrelative:todoapi\\models\\requests\\todopostrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{827387B9-1AD6-4E29-9B0E-C7CBC09C46FB}|ToDoAPI\\ToDoAPI.csproj|d:\\learn\\petproject\\todosite\\backend\\todoapi\\services\\securityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{827387B9-1AD6-4E29-9B0E-C7CBC09C46FB}|ToDoAPI\\ToDoAPI.csproj|solutionrelative:todoapi\\services\\securityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{827387B9-1AD6-4E29-9B0E-C7CBC09C46FB}|ToDoAPI\\ToDoAPI.csproj|d:\\learn\\petproject\\todosite\\backend\\todoapi\\contracts\\itodoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{827387B9-1AD6-4E29-9B0E-C7CBC09C46FB}|ToDoAPI\\ToDoAPI.csproj|solutionrelative:todoapi\\contracts\\itodoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{827387B9-1AD6-4E29-9B0E-C7CBC09C46FB}|ToDoAPI\\ToDoAPI.csproj|d:\\learn\\petproject\\todosite\\backend\\todoapi\\models\\requests\\todopatchrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{827387B9-1AD6-4E29-9B0E-C7CBC09C46FB}|ToDoAPI\\ToDoAPI.csproj|solutionrelative:todoapi\\models\\requests\\todopatchrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{827387B9-1AD6-4E29-9B0E-C7CBC09C46FB}|ToDoAPI\\ToDoAPI.csproj|d:\\learn\\petproject\\todosite\\backend\\todoapi\\models\\requests\\userpostrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{827387B9-1AD6-4E29-9B0E-C7CBC09C46FB}|ToDoAPI\\ToDoAPI.csproj|solutionrelative:todoapi\\models\\requests\\userpostrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,80 +30,70 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ToDoPostRequest.cs",
-              "DocumentMoniker": "D:\\learn\\PetProject\\ToDoSite\\backend\\ToDoAPI\\Models\\Requests\\ToDoPostRequest.cs",
-              "RelativeDocumentMoniker": "ToDoAPI\\Models\\Requests\\ToDoPostRequest.cs",
-              "ToolTip": "D:\\learn\\PetProject\\ToDoSite\\backend\\ToDoAPI\\Models\\Requests\\ToDoPostRequest.cs",
-              "RelativeToolTip": "ToDoAPI\\Models\\Requests\\ToDoPostRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\learn\\PetProject\\ToDoSite\\backend\\ToDoAPI\\Program.cs",
+              "RelativeDocumentMoniker": "ToDoAPI\\Program.cs",
+              "ToolTip": "D:\\learn\\PetProject\\ToDoSite\\backend\\ToDoAPI\\Program.cs",
+              "RelativeToolTip": "ToDoAPI\\Program.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwDUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T08:16:12.953Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IToDoService.cs",
-              "DocumentMoniker": "D:\\learn\\PetProject\\ToDoSite\\backend\\ToDoAPI\\Contracts\\IToDoService.cs",
-              "RelativeDocumentMoniker": "ToDoAPI\\Contracts\\IToDoService.cs",
-              "ToolTip": "D:\\learn\\PetProject\\ToDoSite\\backend\\ToDoAPI\\Contracts\\IToDoService.cs",
-              "RelativeToolTip": "ToDoAPI\\Contracts\\IToDoService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T08:07:00.408Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ToDoPatchRequest.cs",
-              "DocumentMoniker": "D:\\learn\\PetProject\\ToDoSite\\backend\\ToDoAPI\\Models\\Requests\\ToDoPatchRequest.cs",
-              "RelativeDocumentMoniker": "ToDoAPI\\Models\\Requests\\ToDoPatchRequest.cs",
-              "ToolTip": "D:\\learn\\PetProject\\ToDoSite\\backend\\ToDoAPI\\Models\\Requests\\ToDoPatchRequest.cs",
-              "RelativeToolTip": "ToDoAPI\\Models\\Requests\\ToDoPatchRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T07:38:27.731Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ToDoResponse.cs",
-              "DocumentMoniker": "D:\\learn\\PetProject\\ToDoSite\\backend\\ToDoAPI\\Models\\Responses\\ToDoResponse.cs",
-              "RelativeDocumentMoniker": "ToDoAPI\\Models\\Responses\\ToDoResponse.cs",
-              "ToolTip": "D:\\learn\\PetProject\\ToDoSite\\backend\\ToDoAPI\\Models\\Responses\\ToDoResponse.cs",
-              "RelativeToolTip": "ToDoAPI\\Models\\Responses\\ToDoResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T07:21:46.323Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ToDoService.cs",
-              "DocumentMoniker": "D:\\learn\\PetProject\\ToDoSite\\backend\\ToDoAPI\\Services\\ToDoService.cs",
-              "RelativeDocumentMoniker": "ToDoAPI\\Services\\ToDoService.cs",
-              "ToolTip": "D:\\learn\\PetProject\\ToDoSite\\backend\\ToDoAPI\\Services\\ToDoService.cs",
-              "RelativeToolTip": "ToDoAPI\\Services\\ToDoService.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAgwEQAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T17:06:45.743Z",
+              "WhenOpened": "2024-10-21T18:20:16.979Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ToDoController.cs",
-              "DocumentMoniker": "D:\\learn\\PetProject\\ToDoSite\\backend\\ToDoAPI\\Controllers\\ToDoController.cs",
-              "RelativeDocumentMoniker": "ToDoAPI\\Controllers\\ToDoController.cs",
-              "ToolTip": "D:\\learn\\PetProject\\ToDoSite\\backend\\ToDoAPI\\Controllers\\ToDoController.cs",
-              "RelativeToolTip": "ToDoAPI\\Controllers\\ToDoController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFAAAAAqAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "UserPostRequest.cs",
+              "DocumentMoniker": "D:\\learn\\PetProject\\ToDoSite\\backend\\ToDoAPI\\Models\\Requests\\UserPostRequest.cs",
+              "RelativeDocumentMoniker": "ToDoAPI\\Models\\Requests\\UserPostRequest.cs",
+              "ToolTip": "D:\\learn\\PetProject\\ToDoSite\\backend\\ToDoAPI\\Models\\Requests\\UserPostRequest.cs",
+              "RelativeToolTip": "ToDoAPI\\Models\\Requests\\UserPostRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T16:56:01.936Z"
+              "WhenOpened": "2024-10-20T14:48:16.079Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\learn\\PetProject\\ToDoSite\\backend\\ToDoAPI\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "ToDoAPI\\Controllers\\UserController.cs",
+              "ToolTip": "D:\\learn\\PetProject\\ToDoSite\\backend\\ToDoAPI\\Controllers\\UserController.cs",
+              "RelativeToolTip": "ToDoAPI\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T14:43:44.106Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SecurityService.cs",
+              "DocumentMoniker": "D:\\learn\\PetProject\\ToDoSite\\backend\\ToDoAPI\\Services\\SecurityService.cs",
+              "RelativeDocumentMoniker": "ToDoAPI\\Services\\SecurityService.cs",
+              "ToolTip": "D:\\learn\\PetProject\\ToDoSite\\backend\\ToDoAPI\\Services\\SecurityService.cs",
+              "RelativeToolTip": "ToDoAPI\\Services\\SecurityService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T14:16:08.964Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "D:\\learn\\PetProject\\ToDoSite\\backend\\ToDoAPI\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "ToDoAPI\\Services\\UserService.cs",
+              "ToolTip": "D:\\learn\\PetProject\\ToDoSite\\backend\\ToDoAPI\\Services\\UserService.cs",
+              "RelativeToolTip": "ToDoAPI\\Services\\UserService.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAIwDEAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T11:09:43.251Z",
+              "EditorCaption": ""
             }
           ]
         }

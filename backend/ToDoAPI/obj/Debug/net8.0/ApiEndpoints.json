@@ -77,5 +77,37 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ToDoAPI.Controllers.UserController",
+    "Method": "Registration",
+    "RelativePath": "User/registration",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ToDoAPI.Models.Requests.UserPostRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ToDoAPI.Controllers.UserController",
+    "Method": "Verify",
+    "RelativePath": "User/verify",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ToDoAPI.Models.Requests.UserPostRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

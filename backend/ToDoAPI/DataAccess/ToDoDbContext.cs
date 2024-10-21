@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System.Data.Common;
 using System.Data;
+using System.Data.Common;
 using ToDoAPI.Models.Entities;
 
 namespace ToDoAPI.DataAccess
@@ -11,6 +11,7 @@ namespace ToDoAPI.DataAccess
         private readonly ILogger<ToDoDbContext> _logger = logger;
 
         public DbSet<ToDo> ToDos { get; set; }
+        public DbSet<User> Users { get; set; }
 
         public async Task<bool> TrySaveChangesAsync(CancellationToken token)
         {
@@ -38,7 +39,7 @@ namespace ToDoAPI.DataAccess
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseNpgsql(_configuration.GetConnectionString("Database"));
+            optionsBuilder.UseNpgsql(_configuration.GetConnectionString("PostgreSQL"));
         }
     }
 }

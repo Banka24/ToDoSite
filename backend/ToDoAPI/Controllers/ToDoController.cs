@@ -23,7 +23,7 @@ namespace ToDoAPI.Controllers
         public async Task<IActionResult> GetToDo(int id, CancellationToken token)
         {
             var todo = await _service.GetToDoAsync(id, token);
-            return todo != null ? Ok(todo) : BadRequest("Такой записи нет");
+            return todo != null ? Ok(todo) : BadRequest();
         }
 
         [HttpPost()]
@@ -41,7 +41,7 @@ namespace ToDoAPI.Controllers
             if (!await _service.AddToDoAsync(toDo, token))
             {
                 _logger.LogError("Попытка добавления не удалась");
-                return BadRequest("Попытка добавления не удалась");
+                return BadRequest();
             }
 
             _logger.LogInformation("Задача была добавлена");
@@ -67,7 +67,7 @@ namespace ToDoAPI.Controllers
             }
 
             _logger.LogInformation("Произошла замена");
-            return Ok("Изменения сохранены");
+            return NoContent();
         }
 
         [HttpDelete("{id}")]
@@ -78,7 +78,7 @@ namespace ToDoAPI.Controllers
             if (status)
             {
                 _logger.LogInformation("Удаление прошло успешно");
-                return Ok("Задание удалено");
+                return NoContent();
             }
 
             _logger.LogError($"Задачи под Id {id} не была найдена!");

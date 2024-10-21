@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { ToDoCard } from '../components/ToDoCard';
 import { Link } from 'react-router-dom';
 import { IToDoProp } from '../props/IToDoProp';
-import { IToDo } from '../models/ToDo';
+import { IToDo } from '../models/IToDo';
 
 async function fetchData() {
   try 

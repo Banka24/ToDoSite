@@ -15,8 +15,11 @@ namespace ToDoAPI
             builder.Logging.ClearProviders();
             builder.Logging.AddConsole();
 
+            builder.Services.AddSingleton<ToDoRedisDbContext>();
+            builder.Services.AddSingleton<ISecurityService, SecurityService>();
             builder.Services.AddScoped<ToDoDbContext>();
             builder.Services.AddScoped<IToDoService, ToDoService>();
+            builder.Services.AddScoped<IUserService, UserService>();
 
             builder.Services.AddCors(option =>
             {
@@ -42,6 +45,7 @@ namespace ToDoAPI
                 dbContext.Database.EnsureCreated();
             }
 
+            app.UseHttpsRedirection();
             app.UseCors();
             app.MapControllers();
             app.Run();

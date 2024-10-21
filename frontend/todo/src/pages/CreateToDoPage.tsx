@@ -1,5 +1,5 @@
 import { FormEvent, useState } from "react";
-import { IToDo } from "../models/ToDo";
+import { IToDo } from "../models/IToDo";
 import axios from "axios";
 import moment from "moment-timezone";
 

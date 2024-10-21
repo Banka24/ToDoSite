@@ -12,5 +12,7 @@ namespace ToDoAPI.Models.Entities
         public DateTime CreateAt { get; set; }
         public DateTime LastDay { get; set; }
         public bool IsComplete { get; set; }
+        public int OwnerId { get; set; }
+        public User Owner { get; set; }
     }
 }

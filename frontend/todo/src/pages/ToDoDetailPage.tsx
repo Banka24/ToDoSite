@@ -1,5 +1,5 @@
 import { FormEvent, useEffect, useState } from "react";
-import { IToDo } from "../models/ToDo";
+import { IToDo } from "../models/IToDo";
 import { IToDoProp } from "../props/IToDoProp";
 import { useParams } from "react-router-dom";
 import axios from "axios";
